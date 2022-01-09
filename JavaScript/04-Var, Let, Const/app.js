@@ -36,3 +36,12 @@ list.push(4); // (+) list referans tutuğundan ve gösterdiği adres değişmedi
 console.log(list); // out : (4) [1, 2, 3, 4]
 
 //-------------------------------------------------
+
+(function(){
+    var a=1; // Global
+    let b=2; 
+    const c=3;
+    console.log(a,b,c); // out : 1 2 3
+})();
+
+console.log(a,b,c);// out : 1 
